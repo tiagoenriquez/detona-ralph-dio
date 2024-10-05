@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Detona Ralph</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 class="menu-label">Tempo</h2>
+                <h2 class="menu-value" id="prazo">0</h2>
+            </div>
+            <div class="menu-time"></div>
+            <div class="menu-score">
+                <h2 class="menu-label">Sua Pontuacao</h2>
+                <h2 class="menu-value" id="pontuacao">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./assets/img/player.png" alt="Foto do jogador">
+                <h2 id="vidas">x3</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="row">
+                <div class="quadrado inimigo" id="1" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="2" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="3" onclick="submeterTiro(event)"></div>
+            </div>
+            <div class="row">
+                <div class="quadrado" id="4" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="5" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="6" onclick="submeterTiro(event)"></div>
+            </div>
+            <div class="row">
+                <div class="quadrado" id="7" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="8" onclick="submeterTiro(event)"></div>
+                <div class="quadrado" id="9" onclick="submeterTiro(event)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="src/globals.js"></script>
+    <script src="src/Status.js"></script>
+    <script src="src/Jogador.js"></script>
+    <script src="src/Inimigo.js"></script>
+    <script src="src/Jogo.js"></script>
+    <script src="src/Page.js"></script>
+    <script defer src="src/main.js"></script>
+</body>
+</html>

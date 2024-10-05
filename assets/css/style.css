@@ -1,0 +1,58 @@
+img {
+    height: 60px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../img/wall.png");
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-bottom: 8px solid gold;
+    color: white;
+    height: 90px;
+    width: 100%;
+}
+
+.menu-label {
+    color: red;
+}
+
+.menu-lives {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-value {
+    margin-top: 8px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.quadrado {
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.inimigo {
+    background-image: url("../img/ralph.png");
+    background-size: cover;
+}
